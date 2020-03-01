@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pattern_background"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/login_back"
+        android:text="@string/found_space"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signIn_Email_EditText"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/text_back"
+        android:drawableEnd="@drawable/ic_mail_black_24dp"
+        android:hint="@string/signIn_your_email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/signIn_Pass_EditText"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text_back"
+        android:drawableEnd="@drawable/ic_visibility_black_24dp"
+        android:ems="10"
+        android:hint="@string/signIn_your_password"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/signIn_Email_EditText" />
+
+
+    <Button
+        android:id="@+id/signIn_Forget_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text_back"
+        android:text="@string/signIn_forget_your_password"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/signIn_Pass_EditText" />
+
+    <Button
+        android:id="@+id/signIn_Login_Button"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/login_back"
+        android:text="@string/signIn"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/signIn_Forget_Button" />
+
+    <TextView
+        android:id="@+id/signIn_or_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/or"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/signIn_Login_Button" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/signIn_or_textView"
+        app:layout_constraintEnd_toStartOf="@id/signIn_or_textView"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@id/signIn_or_textView" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/signIn_or_textView"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toEndOf="@id/signIn_or_textView"
+        app:layout_constraintTop_toTopOf="@id/signIn_or_textView" />
+
+
+    <Button
+        android:id="@+id/signIn_google_Button"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/extra_button"
+        android:drawableStart="@drawable/google"
+        android:text="@string/signIn_google"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+        app:layout_constraintStart_toStartOf="@+id/guideline_center"
+        app:layout_constraintTop_toBottomOf="@+id/signIn_or_textView" />
+
+    <Button
+        android:id="@+id/signIn_Face_Button"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/extra_button"
+        android:drawableStart="@drawable/facebook"
+        android:text="@string/signIn_facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_center"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/signIn_or_textView" />
+
+    <Button
+        android:id="@+id/signIn_SignUp_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/text_back"
+        android:text="@string/signIn_don_t_have_an_account"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/signIn_Face_Button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

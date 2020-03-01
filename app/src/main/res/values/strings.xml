@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Found Space</string>
+    <string name="found_space">Found Space</string>
+    <string name="signIn_your_email">Your Email</string>
+    <string name="signIn_your_password">Your Password</string>
+    <string name="signIn_forget_your_password">Forget Your Password</string>
+    <string name="signIn">Login</string>
+    <string name="signIn_don_t_have_an_account"><![CDATA[don\'t have an account —> signUp]]></string>
+    <string name="signIn_facebook">Facebook</string>
+    <string name="signIn_google">Google</string>
+    <string name="singUp_first_name">First Name</string>
+    <string name="singUp_last_name">Last Name</string>
+    <string name="singUp_your_password">Your Password</string>
+    <string name="singUp_confirm_password">Confirm Password</string>
+    <string name="singUp_your_email">Your Email</string>
+    <string name="singUp_create_an_account">Create An Account</string>
+    <string name="singUp_back_ground">Back ground of singUp activity</string>
+    <string name="singIn_back_ground">Back ground of main activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">home</string>
+    <string name="bookings">bookings</string>
+    <string name="nearby">nearby</string>
+    <string name="more">more</string>
+    <string name="image">image</string>
+    <string name="singUp">SingUp</string>
+    <string name="singUp_singIn_Button">SingUp</string>
+    <string name="or">or</string>
+
+</resources>
