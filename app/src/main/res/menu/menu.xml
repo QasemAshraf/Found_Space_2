@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/bookingsFragment"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/bookings" />
+    <item
+        android:id="@+id/nearbyFragment"
+        android:icon="@drawable/ic_location_on_black_24dp"
+        android:title="@string/nearby" />
+    <item
+        android:id="@+id/moreFragment"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="@string/more" />
+</menu>
